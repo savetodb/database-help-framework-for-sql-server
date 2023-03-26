@@ -1,13 +1,13 @@
 -- =============================================
 -- Database Help Framework for Microsoft SQL Server
--- Version 3.1, December 13, 2022
+-- Version 3.2, January 9, 2023
 --
--- Copyright 2018-2022 Gartle LLC
+-- Copyright 2018-2023 Gartle LLC
 --
 -- License: MIT
 -- =============================================
 
-IF 301 <= COALESCE((SELECT CAST(LEFT(HANDLER_CODE, CHARINDEX('.', HANDLER_CODE) - 1) AS int) * 100 + CAST(RIGHT(HANDLER_CODE, LEN(HANDLER_CODE) - CHARINDEX('.', HANDLER_CODE)) AS float) FROM doc.handlers WHERE TABLE_SCHEMA = 'doc' AND TABLE_NAME = 'database_help_framework' AND COLUMN_NAME = 'version' AND EVENT_NAME = 'Information'), 0)
+IF 302 <= COALESCE((SELECT CAST(LEFT(HANDLER_CODE, CHARINDEX('.', HANDLER_CODE) - 1) AS int) * 100 + CAST(RIGHT(HANDLER_CODE, LEN(HANDLER_CODE) - CHARINDEX('.', HANDLER_CODE)) AS float) FROM doc.handlers WHERE TABLE_SCHEMA = 'doc' AND TABLE_NAME = 'database_help_framework' AND COLUMN_NAME = 'version' AND EVENT_NAME = 'Information'), 0)
     RAISERROR('Database Help Framework is up-to-date. Update skipped', 11, 0)
 GO
 
@@ -200,7 +200,7 @@ FROM
 
 ''\[([^\]\r\n]*)\]\((https?://[^ \)\r\n]*)\)''                , ''<a href="$2" class="external">$1</a>''
 ', NULL, NULL, NULL
-    UNION ALL SELECT N'doc', N'database_help_framework', N'version', N'Information', NULL, NULL, N'ATTRIBUTE', N'3.1', NULL, NULL, NULL
+    UNION ALL SELECT N'doc', N'database_help_framework', N'version', N'Information', NULL, NULL, N'ATTRIBUTE', N'3.2', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'handlers', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'hzpKpSwDsxsNFhhE3tDwoDTfBHXygOZgVSjxbjaLECfdrcbUgEoQNiPOHSuP/8++FRTcYQ6WlRmRU0LVgQSlP4o6vJv7P9vU8gehdR14vIE+7h5xbUoj+TF4fC1cp26NDGB+Xs+EvOvDfoQO7A8eBKA0I/pDKHe5EAWlBb6tDP0=', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'objects', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'PIhoZkzqJDDP0bAPmAZQV2w2cgwr2EnO1LhzswBSANY2nm4HONnuBBrM21Va7V+R4gO11FkooDJk7+CFG2r1eT2c9JyR02HRbmiv2st7bePs+KObZgSOX+BTCp1bWH8OvLkQbuLCISfFjAa/LbQFY0UyMN/obCrYwNvFM/yyfHE=', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'translations', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'waSLzMxsUz9v1jiAozXbVGWdgGQWgdbiSun5XTU9odw9Iy8Y+vKTKk/xHJ0mD9YbKZ+u88JHw3xO5zHcyWea+McWk7bFafUqVskzdh2A6E24OFoE6lnXcSblyQ2XUp5078Kblo9MxCUmi4XE2E93Rip/zihzRz93JOfB03kFfZs=', NULL, NULL, NULL
@@ -306,7 +306,7 @@ FROM
 
 ''\[([^\]\r\n]*)\]\((https?://[^ \)\r\n]*)\)''                , ''<a href="$2" class="external">$1</a>''
 ', NULL, NULL, NULL
-    UNION ALL SELECT N'doc', N'database_help_framework', N'version', N'Information', NULL, NULL, N'ATTRIBUTE', N'3.1', NULL, NULL, NULL
+    UNION ALL SELECT N'doc', N'database_help_framework', N'version', N'Information', NULL, NULL, N'ATTRIBUTE', N'3.2', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'handlers', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'hzpKpSwDsxsNFhhE3tDwoDTfBHXygOZgVSjxbjaLECfdrcbUgEoQNiPOHSuP/8++FRTcYQ6WlRmRU0LVgQSlP4o6vJv7P9vU8gehdR14vIE+7h5xbUoj+TF4fC1cp26NDGB+Xs+EvOvDfoQO7A8eBKA0I/pDKHe5EAWlBb6tDP0=', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'objects', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'PIhoZkzqJDDP0bAPmAZQV2w2cgwr2EnO1LhzswBSANY2nm4HONnuBBrM21Va7V+R4gO11FkooDJk7+CFG2r1eT2c9JyR02HRbmiv2st7bePs+KObZgSOX+BTCp1bWH8OvLkQbuLCISfFjAa/LbQFY0UyMN/obCrYwNvFM/yyfHE=', NULL, NULL, NULL
     UNION ALL SELECT N'doc', N'translations', NULL, N'License', NULL, NULL, N'ATTRIBUTE', N'waSLzMxsUz9v1jiAozXbVGWdgGQWgdbiSun5XTU9odw9Iy8Y+vKTKk/xHJ0mD9YbKZ+u88JHw3xO5zHcyWea+McWk7bFafUqVskzdh2A6E24OFoE6lnXcSblyQ2XUp5078Kblo9MxCUmi4XE2E93Rip/zihzRz93JOfB03kFfZs=', NULL, NULL, NULL

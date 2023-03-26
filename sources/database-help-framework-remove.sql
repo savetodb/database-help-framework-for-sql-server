@@ -1,8 +1,8 @@
 -- =============================================
 -- Database Help Framework for Microsoft SQL Server
--- Version 3.1, December 13, 2022
+-- Version 3.2, January 9, 2023
 --
--- Copyright 2018-2022 Gartle LLC
+-- Copyright 2018-2023 Gartle LLC
 --
 -- License: MIT
 -- =============================================
