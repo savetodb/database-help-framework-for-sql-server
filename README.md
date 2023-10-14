@@ -2,8 +2,6 @@
 
 Database Help Framework allows documenting databases and generating HTML help.
 
-For example, the [Database Help Framework documentation](https://www.savetodb.com/help/database-help-framework.htm) itself is generated using the framework.
-
 You may edit help with a free version of the [SaveToDB add-in for Microsoft Excel](https://www.savetodb.com/savetodb.htm) or [DBEdit for Windows](https://www.savetodb.com/dbedit.htm).
 
 See also:
